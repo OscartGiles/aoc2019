@@ -10,7 +10,7 @@ fun requiredFuel(mass: Int): Int{
     return (mass / 3.0).toInt() - 2
 }
 
-tailrec fun requiredFuelForFuel(fuelMass: Int, totalAddFuel: Int = 0): Int{
+fun requiredFuelForFuel(fuelMass: Int, totalAddFuel: Int = 0): Int{
 
     val additionFuel: Int = requiredFuel(fuelMass) //Type defs not required
     if (additionFuel <= 0){
